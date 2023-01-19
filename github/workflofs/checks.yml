@@ -15,7 +15,7 @@ jobs:
       - name: "Install python"
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.9'
           architecture: 'x64'
       - name: "Install project dependencies"
         run: pip install -r requirements.txt
