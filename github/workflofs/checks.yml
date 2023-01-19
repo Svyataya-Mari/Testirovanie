@@ -37,7 +37,7 @@ jobs:
         uses: codacy/codacy-coverage-reporter-action@v1
         if: ${{!cancelled()}}
         with:
-          project-token: ${{ secrets.CODACY_PROJECT_API_TOKEN }}
+          project-token: ${{ secrets.MY_SECRET }}
           coverage-reports: ${{ env.COVERAGE_XML_REPORT_PATH }}
 
   publish-package-as-artifact:
